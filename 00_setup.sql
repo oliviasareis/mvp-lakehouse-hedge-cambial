@@ -8,7 +8,7 @@
 -- COMMAND ----------
 
 CREATE SCHEMA IF NOT EXISTS workspace.bronze
-COMMENT 'Camada Bronze: dados como vieram das fontes (BCB, FRED, Yahoo Finance), sem tratamento, com metadados de ingestão.';
+COMMENT 'Camada Bronze: dados como vieram das fontes (Banco Central SGS e FRED), sem tratamento, com metadados de ingestão.';
 
 CREATE SCHEMA IF NOT EXISTS workspace.silver
 COMMENT 'Camada Silver: séries tipadas, deduplicadas e padronizadas (data, valor numérico).';
@@ -25,3 +25,7 @@ COMMENT 'Arquivos brutos das coletas, organizados por fonte/data_ingestao.';
 -- COMMAND ----------
 
 SHOW SCHEMAS IN workspace;
+
+-- COMMAND ----------
+
+   COMMENT ON SCHEMA workspace.bronze IS 'Camada Bronze: dados como vieram das fontes (Banco Central SGS e FRED), sem tratamento, com metadados de ingestão.';
