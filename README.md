@@ -1,6 +1,8 @@
 # Lakehouse de apoio à decisão de proteção cambial
 
 **MVP – Sprint Engenharia de Dados | Pós-graduação em Ciência de Dados e Analytics – PUC-Rio**
+
+
 Autora: Olivia Reis · Plataforma: Databricks Free Edition · Entrega: 27/09/2026
 
 ---
